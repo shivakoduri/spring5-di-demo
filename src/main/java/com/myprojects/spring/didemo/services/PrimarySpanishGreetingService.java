@@ -1,13 +1,16 @@
 package com.myprojects.spring.didemo.services;
 
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PrimaryGreetingService implements GreetingService {
+@Profile("es")
+@Primary
+public class PrimarySpanishGreetingService  implements GreetingService {
 
     @Override
     public String sayGreeting() {
-        return "Hello - Primary Greeting service";
+        return "Servicio de Saludo Primario";
     }
 }
