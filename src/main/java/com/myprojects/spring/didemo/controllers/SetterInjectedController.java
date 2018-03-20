@@ -1,9 +1,8 @@
 package com.myprojects.spring.didemo.controllers;
 
-import com.myprojects.spring.didemo.services.GreetingService;
+import com.myprojects.spring.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 
 @Controller

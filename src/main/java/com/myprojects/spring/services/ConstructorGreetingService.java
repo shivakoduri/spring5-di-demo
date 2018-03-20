@@ -1,4 +1,4 @@
-package com.myprojects.spring.didemo.services;
+package com.myprojects.spring.services;
 
 import org.springframework.stereotype.Service;
 

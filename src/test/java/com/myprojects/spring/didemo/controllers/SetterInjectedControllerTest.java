@@ -1,6 +1,6 @@
 package com.myprojects.spring.didemo.controllers;
 
-import com.myprojects.spring.didemo.services.GreetingServiceImpl;
+import com.myprojects.spring.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
