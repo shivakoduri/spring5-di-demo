@@ -5,6 +5,7 @@ import com.myprojects.spring.didemo.controllers.MyController;
 import com.myprojects.spring.didemo.controllers.PropertyInjectedController;
 import com.myprojects.spring.didemo.controllers.SetterInjectedController;
 import com.myprojects.spring.didemo.examplebeans.SomeDataSource;
+import com.myprojects.spring.didemo.examplebeans.SomeJMSBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -19,5 +20,8 @@ public class DiDemoApplication {
 
 		SomeDataSource dataSource = (SomeDataSource) ctx.getBean(SomeDataSource.class);
 		System.out.println(dataSource.getUser());
+
+        SomeJMSBroker jmsBroker = (SomeJMSBroker) ctx.getBean(SomeJMSBroker.class);
+        System.out.println(jmsBroker.getUsername());
 	}
 }
